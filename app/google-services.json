@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "478039070598",
+    "project_id": "sameroot-fd081",
+    "storage_bucket": "sameroot-fd081.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478039070598:android:288cacbe0468531e4ffe07",
+        "android_client_info": {
+          "package_name": "com.example.sameroot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478039070598-igv060g8sacknntkbsk9kks9hhmbq833.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHoseXn1FikBcLBzfWcESqkcHOSkbAqnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478039070598-igv060g8sacknntkbsk9kks9hhmbq833.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

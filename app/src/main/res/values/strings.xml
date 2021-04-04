@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CarShare</string>
+    <string name ="Ride">Ride</string>
+    
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EAEFB5"
+    android:paddingHorizontal="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:text="My Rides"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/tvCurrentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Current Location"
+            android:paddingVertical="15dp"
+            android:textColor="#000000"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="60dp"
+            android:background="@drawable/rectangularfield"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_currentlocation"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/tvDestinationLocation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Destination Location"
+            android:paddingVertical="15dp"
+            android:textColor="#000000"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="60dp"
+            android:background="@drawable/rectangularfield"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_destinationlocation"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/tvDate"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:hint="Select Date"
+                android:paddingVertical="15dp"
+                android:textColor="#000000"
+                android:paddingLeft="20dp"
+                android:background="@drawable/rectangularfield"/>
+            <EditText
+                android:id="@+id/tvTime"
+                android:layout_width="173dp"
+                android:layout_height="50dp"
+                android:hint="Select Time"
+                android:paddingVertical="15dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000"
+                android:paddingLeft="20dp"
+                android:background="@drawable/rectangularfield"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/matchButton"
+            android:layout_width="111dp"
+            android:layout_height="40dp"
+            android:text="Matched"
+            android:textColor="#ffffff"
+            android:background="#50B354"
+            android:layout_marginTop="70dp"
+            android:textSize="18dp"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/joinButton"
+            android:layout_width="111dp"
+            android:layout_height="40dp"
+            android:text="Joined"
+            android:textColor="#ffffff"
+            android:background="#DD6F4C"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/pendingButton"
+                android:layout_width="111dp"
+                android:layout_height="40dp"
+                android:text="Pending"
+                android:textColor="#ffffff"
+                android:background="#E83C06"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

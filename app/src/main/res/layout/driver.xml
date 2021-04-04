@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#80CEF1"
+    android:paddingHorizontal="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="94dp"
+        android:text="Driver's Details"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="40dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+        <EditText
+            android:id="@+id/D_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your Name"
+            android:paddingVertical="15dp"
+            android:textColor="#000000"
+            android:inputType="textPersonName"
+            android:paddingLeft="60dp"
+            android:background="@drawable/rectangularfield"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/C_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your Vehicle number"
+            android:paddingVertical="15dp"
+            android:textColor="#000000"
+            android:inputType="text"
+            android:paddingLeft="60dp"
+            android:background="@drawable/rectangularfield"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/C_model"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your Car Model"
+            android:paddingVertical="15dp"
+            android:textColor="#000000"
+            android:inputType="text"
+            android:paddingLeft="60dp"
+            android:background="@drawable/rectangularfield"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/C_company"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your Company"
+            android:paddingVertical="15dp"
+            android:textColor="#000000"
+            android:inputType="text"
+            android:paddingLeft="60dp"
+            android:background="@drawable/rectangularfield"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/C_adhaar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your Adhaar Number"
+            android:paddingVertical="15dp"
+            android:textColor="#000000"
+            android:inputType="text|number"
+            android:paddingLeft="60dp"
+            android:background="@drawable/rectangularfield"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/p_City"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your City Name"
+            android:paddingVertical="15dp"
+            android:textColor="#000000"
+            android:inputType="text"
+            android:paddingLeft="60dp"
+            android:background="@drawable/rectangularfield"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/Driver_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your Mobile Number"
+            android:paddingVertical="15dp"
+            android:textColor="#000000"
+            android:inputType="text|number"
+            android:paddingLeft="60dp"
+            android:background="@drawable/rectangularfield"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/SubmitDriverButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:background="#3F51B5"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textAllCaps="false"/>
+</LinearLayout>
