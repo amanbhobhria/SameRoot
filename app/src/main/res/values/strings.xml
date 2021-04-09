@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">CarShare</string>
     <string name ="Ride">Ride</string>
+
+
+
+    <string name="a">Save money and reduce the cost of fuel</string>
+    <string name="b">Share with love</string>
+    <string name="c">Same destination, more companions</string>
+    <string name="d">Aman</string>
+
     
     <string-array name="Gender">
         <item>Male</item>

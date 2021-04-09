@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:background="#8F82B1"
+    android:background="@drawable/car_background"
     android:paddingHorizontal="30dp"
     tools:context=".MainActivity">
 
@@ -49,6 +49,8 @@
         android:layout_marginTop="20dp">
 
 
+
+
         <Button
             android:id="@+id/passengerBTN"
             android:layout_width="match_parent"
@@ -76,21 +78,31 @@
             android:background="#00DD0D0D"
             android:foreground="@drawable/car" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a"
+            android:layout_below="@+id/passengerBTN"
+            />
+
+        <Button
+            android:id="@+id/GoToDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="250dp"
+            android:background="#9703A9F4"
+            android:text="Go To Dashboard"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
 
     </RelativeLayout>
-    <Button
-        android:id="@+id/GoToDashboard"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="250dp"
-        android:background="#9703A9F4"
-        android:text="Go To Dashboard"
-        android:textAllCaps="false"
-        android:textColor="#ffffff"
-        android:textSize="25dp" />
+
+
 </LinearLayout>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="#4744A5"
+    android:background="@drawable/login_background"
     android:paddingHorizontal="30dp"
     tools:context=".MainActivity">
 
@@ -67,13 +67,14 @@
             android:inputType="textEmailAddress"
             android:paddingLeft="60dp"
             android:background="@drawable/rectangularfield"/>
-    <ImageView
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="10dp"
-        android:background="@drawable/at"
-        android:layout_alignParentLeft="true"
-        android:layout_centerInParent="true" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/at" />
     </RelativeLayout>
 
     <RelativeLayout
