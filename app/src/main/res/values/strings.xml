@@ -1,19 +1,27 @@
 <resources>
     <string name="app_name">CarShare</string>
-    <string name ="Ride">Ride</string>
-
+    <string name="Ride">Ride</string>
 
 
     <string name="a">Save money and reduce the cost of fuel</string>
     <string name="b">Share with love</string>
     <string name="c">Same destination, more companions</string>
     <string name="d">Aman</string>
+    <string name="enter_your_car_model">Enter your Car Model</string>
+    <string name="driver_detail">Driver Detail</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="enter_your_vehicle_number">Enter your Vehicle number</string>
+    <string name="enter_your_company">Enter your Company</string>
+    <string name="enter_your_adhaar_number">Enter your Adhaar Number</string>
+    <string name="enter_your_city_name">Enter your City Name</string>
+    <string name="enter_your_mobile_number">Enter your Mobile Number</string>
+    <string name="submit">Submit</string>
 
-    
+
     <string-array name="Gender">
         <item>Male</item>
         <item>Female</item>
         <item>Others</item>
     </string-array>
-    
+
 </resources>

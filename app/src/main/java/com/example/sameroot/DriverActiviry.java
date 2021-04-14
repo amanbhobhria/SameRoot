@@ -3,6 +3,7 @@ package com.example.sameroot;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,7 +24,7 @@ public class DriverActiviry extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.driver);
         d_name = findViewById(R.id.D_name);
-        d_carno = findViewById(R.id.C_number);
+        d_carno = findViewById(R.id.C_no);
         d_carModel = findViewById(R.id.C_model);
         d_carcompany = findViewById(R.id.C_company);;
         d_adhar = findViewById(R.id.C_adhaar);
@@ -35,9 +36,11 @@ public class DriverActiviry extends Activity {
             @Override
             public void onClick(View view) {
                 insertDriverData();
-            }
+        }
+
         });
     }
+
     private void insertDriverData(){
         String ddname = d_name.getText().toString();
         String ddcarno = d_carno.getText().toString();
@@ -49,7 +52,19 @@ public class DriverActiviry extends Activity {
         Driver ddriver = new Driver(ddname, ddcarno, ddcarmodel, ddcarcompany, ddadhar, ddcity, ddmobile, ddmobile);
         DriverDbRef.push().setValue(ddriver);
         Toast.makeText(DriverActiviry.this, "Data submitted!", Toast.LENGTH_SHORT).show();
-        Intent intent=new Intent(DriverActiviry.this, MainActivity.class);
-        startActivity(intent);
+
+        Intent intent = new Intent();
+        intent.putExtra("isDataUpdate","1");
+        setResult(2,intent);
+        finish();//finishing activity
+
+       /* Intent intent=new Intent(DriverActiviry.this, MainActivity.class);
+        startActivity(intent);*/
     }
-}
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+    //Inflate the menu this adds item to the action bar if it present
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return true;
+        }
+        }

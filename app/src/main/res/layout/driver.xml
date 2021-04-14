@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
     android:background="#80CEF1"
-    android:paddingHorizontal="30dp"
-    tools:context=".MainActivity">
+    android:paddingHorizontal="30dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="94dp"
-        android:text="Driver's Details"
+        android:text="@string/driver_detail"
         android:textColor="#ffffff"
         android:textStyle="bold"
-        android:textSize="40dp" />
+        android:textSize="40sp" />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +23,7 @@
             android:id="@+id/D_name"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Enter your Name"
+            android:hint="@string/enter_your_name"
             android:paddingVertical="15dp"
             android:textColor="#000000"
             android:inputType="textPersonName"
@@ -41,10 +38,10 @@
         android:layout_marginTop="20dp">
 
         <EditText
-            android:id="@+id/C_number"
+            android:id="@+id/C_no"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Enter your Vehicle number"
+            android:hint="@string/enter_your_vehicle_number"
             android:paddingVertical="15dp"
             android:textColor="#000000"
             android:inputType="text"
@@ -61,7 +58,7 @@
             android:id="@+id/C_model"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Enter your Car Model"
+            android:hint="@string/enter_your_car_model"
             android:paddingVertical="15dp"
             android:textColor="#000000"
             android:inputType="text"
@@ -79,7 +76,7 @@
             android:id="@+id/C_company"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Enter your Company"
+            android:hint="@string/enter_your_company"
             android:paddingVertical="15dp"
             android:textColor="#000000"
             android:inputType="text"
@@ -97,7 +94,7 @@
             android:id="@+id/C_adhaar"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Enter your Adhaar Number"
+            android:hint="@string/enter_your_adhaar_number"
             android:paddingVertical="15dp"
             android:textColor="#000000"
             android:inputType="text|number"
@@ -113,7 +110,7 @@
             android:id="@+id/p_City"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Enter your City Name"
+            android:hint="@string/enter_your_city_name"
             android:paddingVertical="15dp"
             android:textColor="#000000"
             android:inputType="text"
@@ -130,10 +127,10 @@
             android:id="@+id/Driver_mobile"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Enter your Mobile Number"
+            android:hint="@string/enter_your_mobile_number"
             android:paddingVertical="15dp"
             android:textColor="#000000"
-            android:inputType="text|number"
+            android:inputType="phone"
             android:paddingLeft="60dp"
             android:background="@drawable/rectangularfield"
             />
@@ -149,10 +146,10 @@
         android:id="@+id/SubmitDriverButton"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Submit"
+        android:text="@string/submit"
         android:textColor="#ffffff"
         android:background="#3F51B5"
         android:layout_marginTop="30dp"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textAllCaps="false"/>
 </LinearLayout>
