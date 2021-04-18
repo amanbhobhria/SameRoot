@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:background="#4744A5"
-    android:paddingHorizontal="30dp"
-    tools:context=".MainActivity">
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4744A5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center"
         android:layout_marginTop="0dp"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:text="Welcome to"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:text="CarShare"
             android:layout_marginLeft="10dp"
+            android:text="CarShare"
             android:textColor="#CB1AEA"
-            android:textStyle="bold"
-            android:textSize="34dp" />
+            android:textSize="34dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -40,19 +47,22 @@
         android:layout_height="74dp"
         android:text="Sign Up"
         android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:textSize="40dp" />
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
     <RelativeLayout
         android:layout_width="100dp"
         android:layout_height="100dp">
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/profile"
             android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
-            app:civ_border_color="#DDC915"/>
+            android:src="@drawable/profile"
+            app:civ_border_color="#DDC915" />
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -62,20 +72,22 @@
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:background="@drawable/rectangularfield"
             android:hint="Enter Full Name"
-            android:paddingVertical="15dp"
-            android:textColor="#000000"
             android:inputType="textEmailAddress"
+            android:paddingVertical="15dp"
             android:paddingLeft="60dp"
-            android:background="@drawable/rectangularfield"/>
+            android:textColor="#000000" />
+
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/nameicon"
             android:layout_alignParentLeft="true"
-            android:layout_centerInParent="true" />
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/nameicon" />
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -85,19 +97,20 @@
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:background="@drawable/rectangularfield"
             android:hint="Enter your Email"
-            android:paddingVertical="15dp"
-            android:textColor="#000000"
             android:inputType="textEmailAddress"
+            android:paddingVertical="15dp"
             android:paddingLeft="60dp"
-            android:background="@drawable/rectangularfield"/>
+            android:textColor="#000000" />
+
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/at"
             android:layout_alignParentLeft="true"
-            android:layout_centerInParent="true" />
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/at" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -109,19 +122,20 @@
             android:id="@+id/password1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:background="@drawable/rectangularfield"
             android:hint="Enter your Password"
-            android:paddingVertical="15dp"
-            android:textColor="#000000"
             android:inputType="textPassword"
+            android:paddingVertical="15dp"
             android:paddingLeft="60dp"
-            android:background="@drawable/rectangularfield"/>
+            android:textColor="#000000" />
+
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/lock"
             android:layout_alignParentLeft="true"
-            android:layout_centerInParent="true" />
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/lock" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -133,19 +147,20 @@
             android:id="@+id/password2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:background="@drawable/rectangularfield"
             android:hint="Confirm your Password"
-            android:paddingVertical="15dp"
-            android:textColor="#000000"
             android:inputType="textPassword"
+            android:paddingVertical="15dp"
             android:paddingLeft="60dp"
-            android:background="@drawable/rectangularfield"/>
+            android:textColor="#000000" />
+
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/lock"
             android:layout_alignParentLeft="true"
-            android:layout_centerInParent="true" />
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/lock" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -154,39 +169,40 @@
         android:layout_marginTop="0dp">
 
         <RadioGroup
+            android:id="@+id/radioGroup"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioGroup"/>
+            android:layout_height="wrap_content" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="40dp">
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal">
 
 
-        <RadioButton
-            android:id="@+id/male"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Male"
-            android:textColor="#ffffff"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/female"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Female"
-            android:textColor="#ffffff"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -196,43 +212,48 @@
             android:id="@+id/mobile"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:background="@drawable/rectangularfield"
             android:hint="Enter Mobile Number"
-            android:paddingVertical="15dp"
-            android:textColor="#000000"
             android:inputType="number"
+            android:paddingVertical="15dp"
             android:paddingLeft="60dp"
-            android:background="@drawable/rectangularfield"/>
+            android:textColor="#000000" />
+
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/mobile"
             android:layout_alignParentLeft="true"
-            android:layout_centerInParent="true" />
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/mobile" />
     </RelativeLayout>
+
     <Button
         android:id="@+id/signup"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Sign Up"
-        android:textColor="#ffffff"
-        android:background="#3F51B5"
         android:layout_marginTop="30dp"
-        android:textSize="25dp"
-        android:textAllCaps="false"/>
+        android:background="#3F51B5"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="40dp">
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="You already have an account?"
             android:textColor="#ffffff"
-            android:textSize="18dp"/>
+            android:textSize="18dp" />
+
         <TextView
             android:id="@+id/signinTv"
             android:layout_width="wrap_content"
@@ -241,9 +262,10 @@
             android:text="Sign In"
             android:textColor="#ffffff"
             android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
 
     </LinearLayout>
+    </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:gravity="center"
@@ -29,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/rectangularfield"
-        android:hint="@string/enter_your_name"
+        android:hint="@string/name"
         android:inputType="textPersonName"
         android:paddingVertical="15dp"
         android:paddingLeft="60dp"/>
@@ -79,5 +83,5 @@
         android:layout_height="60dp"
         android:text="@string/submit"
         />
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

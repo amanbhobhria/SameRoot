@@ -9,13 +9,19 @@
     <string name="d">Aman</string>
     <string name="enter_your_car_model">Enter your Car Model</string>
     <string name="driver_detail">Driver Detail</string>
-    <string name="enter_your_name">Enter your Name</string>
-    <string name="enter_your_vehicle_number">Enter your Vehicle number</string>
-    <string name="enter_your_company">Enter your Company</string>
+    <string name="name">Name</string>
+    <string name="enter_your_vehicle_number">Vehicle number</string>
+
     <string name="enter_your_adhaar_number">Enter your Adhaar Number</string>
     <string name="enter_your_city_name">Enter your City Name</string>
     <string name="enter_your_mobile_number">Enter your Mobile Number</string>
     <string name="submit">Submit</string>
+    <string name="start_location">Start Location</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="updated">Updated !!!</string>
+    <string name="post_ride">Post ride</string>
+    <string name="login">login</string>
+    <string name="sign_up">signUp</string>
 
 
     <string-array name="Gender">

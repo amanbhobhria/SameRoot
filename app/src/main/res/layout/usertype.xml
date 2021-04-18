@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:background="@drawable/car_background"
+    android:background="@color/white"
     android:paddingHorizontal="30dp"
     tools:context=".MainActivity">
 
@@ -35,16 +38,17 @@
     </RelativeLayout>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="94dp"
-        android:text="Post Ride"
-        android:textColor="#ffffff"
-        android:textSize="40dp"
-        android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="99dp"
+            android:layout_marginTop="2dp"
+            android:text="Post Ride"
+            android:textColor="#FF5722"
+            android:textSize="40dp"
+            android:textStyle="bold" />
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp">
 
@@ -57,10 +61,6 @@
             android:layout_height="65dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginRight="0dp"
-            android:layout_marginBottom="250dp"
             android:background="#9703A9F4"
             android:text="Post Ride"
             android:textAllCaps="false"
@@ -79,8 +79,13 @@
             android:foreground="@drawable/car" />
 
         <TextView
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#3F51B5"
+            android:textSize="15sp"
+            android:textStyle="italic"
             android:text="@string/a"
             android:layout_below="@+id/passengerBTN"
             />
@@ -92,10 +97,10 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="200dp"
             android:layout_marginEnd="0dp"
             android:layout_marginRight="0dp"
-            android:layout_marginBottom="269dp"
+            android:layout_marginBottom="0dp"
             android:background="#9703A9F4"
             android:text="Go To Dashboard"
             android:textAllCaps="false"
@@ -107,3 +112,4 @@
 
 
 </LinearLayout>
+</ScrollView>
