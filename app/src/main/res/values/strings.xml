@@ -22,6 +22,21 @@
     <string name="post_ride">Post ride</string>
     <string name="login">login</string>
     <string name="sign_up">signUp</string>
+    <string name="Login">Login</string>
+    <string name="enter_username">ENTER USER NAME</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forget_password">Forgot Password</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="create_account">create account</string>
+    <string name="enter_full_name">Enter full name</string>
+    <string name="enter_email">Enter email</string>
+    <string name="next_btn">Next</string>
+    <string name="login_btn">Login</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="otp_text">Otp Text</string>
+    <string name="otp_verification_text">otp verification text</string>
+    <string name="otp_description_text">Otp Description Text</string>
+    <string name="post_ride1">Post Ride</string>
 
 
     <string-array name="Gender">

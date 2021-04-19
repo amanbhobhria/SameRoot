@@ -4,20 +4,22 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import androidx.annotation.Nullable;
 
 public class UserTypeActivity extends Activity {
-    private Button PassengerButton, BackButton, gotoDashboard;
+    private Button PostButton, BackButton, gotoDashboard;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.usertype);
-        PassengerButton=findViewById(R.id.passengerBTN);
+        PostButton=findViewById(R.id.postBTN);
         BackButton = findViewById(R.id.backButton);
         gotoDashboard = findViewById(R.id.GoToDashboard);
-        PassengerButton.setOnClickListener(new View.OnClickListener() {
+        PostButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -41,4 +43,5 @@ public class UserTypeActivity extends Activity {
             }
         });
 }
+
 }

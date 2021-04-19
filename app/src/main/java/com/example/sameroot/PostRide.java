@@ -46,7 +46,7 @@ public class PostRide extends Activity {
     TextView textView1, textView2, textView3, textView4, dateTE, TimeTE;
     Button Passengerbutton;
     Button Driverbutton;
-    ProgressBar postProgress;
+   // ProgressBar postProgress;
 
     TextView updateProfileTxt;
     private Spinner spDriver, spPassenger;
@@ -72,9 +72,8 @@ public class PostRide extends Activity {
         textView3 = findViewById(R.id.text_view3);
         textView4 = findViewById(R.id.text_view4);
         updateProfileTxt = findViewById(R.id.updateProfileTxt);
-        postProgress = findViewById(R.id.progress_post);
-        Passengerbutton.setVisibility(View.GONE);
-        postProgress.setVisibility(View.VISIBLE);
+       // postProgress = findViewById(R.id.progress_post);
+        //Passengerbutton.setVisibility(View.GONE);
 
 
         //Initiate places
@@ -287,13 +286,6 @@ public class PostRide extends Activity {
 
     }
 
-    private void insertPassengerData() {
-    }
-
-    private void loginUserFun() {
-
-
-    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

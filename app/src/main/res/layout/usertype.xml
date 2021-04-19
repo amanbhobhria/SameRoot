@@ -53,16 +53,16 @@
         android:layout_marginTop="20dp">
 
 
-
-
         <Button
-            android:id="@+id/passengerBTN"
+            android:id="@+id/postBTN"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:background="#9703A9F4"
-            android:text="Post Ride"
+            android:text="@string/post_ride1"
             android:textAllCaps="false"
             android:textColor="#ffffff"
             android:textSize="25dp" />
@@ -87,7 +87,7 @@
             android:textSize="15sp"
             android:textStyle="italic"
             android:text="@string/a"
-            android:layout_below="@+id/passengerBTN"
+            android:layout_below="@+id/postBTN"
             />
 
         <Button
