@@ -36,6 +36,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:layout_marginTop="40dp">
 
             <Button
@@ -53,6 +54,28 @@
                 android:transitionName="transition_login"
                 tools:ignore="ButtonStyle"
                 tools:targetApi="lollipop" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't Have an account"
+                android:layout_marginTop="20sp"
+                android:textColor="#E61515"/>
+            <Button
+                android:id="@+id/signUp_btn1st"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#E40A0A"
+                android:textColor="@color/white"
+                android:onClick="callSignUpWelcome"
+                android:text="@string/SignUp"
+                android:textStyle="bold"
+                android:transitionName="transition_login"
+                tools:ignore="ButtonStyle"
+                tools:targetApi="lollipop" />
+
 
 
         </LinearLayout>

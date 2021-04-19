@@ -18,7 +18,7 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
+//import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 //    private TextView SignUpTv;
 //    private TextView ForgetTv;
 //    private ProgressDialog progressDialog;
-//    private FirebaseAuth firebaseAuth;
+//   private FirebaseAuth firebaseAuth;
 
 //    @Override
 //    protected void onResume() {
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //   firebaseAuth = FirebaseAuth.getInstance();
+//      firebaseAuth = FirebaseAuth.getInstance();
 
         login_btn = findViewById(R.id.login_btn);
     }
@@ -60,50 +60,31 @@ public class MainActivity extends AppCompatActivity {
         } else {
             startActivity(intent);
         }
+    }
 
 
-
-
-
-//        emailEt = findViewById(R.id.email);
-//        passwordEt = findViewById(R.id.password);
-//        SignInButton = findViewById(R.id.signin);
-//        progressDialog = new ProgressDialog(this);
-//        SignUpTv = findViewById(R.id.signupTv);
-//        ForgetTv = findViewById(R.id.ResetTv);
-//        SignInButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Login();
-//
-//            }
-//        });
-//        SignUpTv.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent=new Intent(MainActivity.this,SignUpActivity.class);
-//                startActivity(intent);
-//
-//            }
-//        });
-//        ForgetTv.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent=new Intent(MainActivity.this,ForgetActivity.class);
-//                startActivity(intent);
-//
-//            }
-////        });
 //        if(firebaseAuth.getCurrentUser() !=null){
-//            Intent intent = new Intent(MainActivity.this, UserTypeActivity.class);
-//            startActivity(intent);
+//            Intent intent2 = new Intent(MainActivity.this, UserTypeActivity.class);
+//            startActivity(intent2);
 //            finish();
 //        }
-//
-//    }
+        public void callSignUpWelcome(View view){
 
 
+            Intent intent = new Intent(getApplicationContext(), SignUp.class);
 
+
+            Pair[] pairs = new Pair[1];
+            pairs[0] = new Pair(findViewById(R.id.signUp_btn1st), "transition_signUp_welcome");
+
+
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, pairs);
+                startActivity(intent, options.toBundle());
+            } else {
+                startActivity(intent);
+            }
+        }
 
 //    private void Login(){
 //        String email = emailEt.getText().toString();
@@ -143,5 +124,5 @@ public class MainActivity extends AppCompatActivity {
 //        });
 
    }
-    }
+
 
