@@ -174,7 +174,7 @@
             android:textAlignment="textEnd"
             android:textColor="#100B0B"
             android:textSize="14dp"
-            android:visibility="visible" />
+            android:visibility="gone" />
     <ProgressBar
         android:id="@+id/progress_post"
         android:layout_width="match_parent"

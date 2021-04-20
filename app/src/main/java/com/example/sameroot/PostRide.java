@@ -72,8 +72,6 @@ public class PostRide extends Activity {
         textView3 = findViewById(R.id.text_view3);
         textView4 = findViewById(R.id.text_view4);
         updateProfileTxt = findViewById(R.id.updateProfileTxt);
-       // postProgress = findViewById(R.id.progress_post);
-        //Passengerbutton.setVisibility(View.GONE);
 
 
         //Initiate places
