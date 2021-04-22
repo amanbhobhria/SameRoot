@@ -39,6 +39,7 @@
     <string name="otp_description_text">Otp Description Text</string>
     <string name="post_ride1">Post Ride</string>
     <string name="SignUp">SignUp</string>
+    <string name="welcome">Welcome to Mutual Car Sharing</string>
 
 
     <string-array name="Gender">

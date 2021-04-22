@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+
+    android:background="#C19A9A"
+    android:layout_height="match_parent"
  >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        android:background="#80CEF1"
         android:paddingHorizontal="30dp">
 
     <TextView
@@ -25,14 +26,14 @@
 
         <EditText
             android:id="@+id/D_name"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="@string/name"
             android:layout_centerInParent="true"
             android:paddingVertical="15dp"
             android:textColor="#000000"
             android:inputType="textPersonName"
-            android:paddingLeft="30dp"
+            android:paddingLeft="70dp"
             android:paddingRight="30dp"
             android:background="@drawable/rectangularfield"/>
 
@@ -152,7 +153,7 @@
 
         <Button
             android:id="@+id/SubmitDriverButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="30dp"
             android:background="#3F51B5"

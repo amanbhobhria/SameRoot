@@ -115,14 +115,7 @@ public class PostRide extends Activity {
         });
 
 
-        //seats = findViewById(R.id.Seats);
-//        spDriver = findViewById(R.id.spinner_rider_type);
-//        spPassenger = findViewById(R.id.spinner_rider_type);
-        // n1 = findViewById(R.id.spinner_seat_no);
-//        n2 = findViewById(R.id.spinner_seat_no);
-//        n3 = findViewById(R.id.spinner_seat_no);
-//        n4 = findViewById(R.id.spinner_seat_no);
-        //  eLocation = findViewById(R.id.EndLocation);
+
         dateTE = findViewById(R.id.date);
         TimeTE = findViewById(R.id.time);
         Passengerbutton = findViewById(R.id.SubmitPassengerButton);
@@ -135,6 +128,7 @@ public class PostRide extends Activity {
 
         Spinner spinner1 = findViewById(R.id.spinner_seat_no);
         ArrayList<String> arrayList1 = new ArrayList<>();
+        arrayList1.add("Seat");
         arrayList1.add("1");
         arrayList1.add("2");
         arrayList1.add("3");
@@ -158,7 +152,7 @@ public class PostRide extends Activity {
 
         final Spinner spinner = findViewById(R.id.spinner_rider_type);
         ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("Select");
+        arrayList.add("Rider Type");
         arrayList.add("Driver");
         arrayList.add("Passenger");
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, arrayList);

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#606EB8"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -10,7 +11,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        android:background="#4744A5"
+
         android:paddingHorizontal="30dp"
         tools:context=".MainActivity">
 
@@ -20,27 +21,19 @@
             android:orientation="horizontal"
             android:layout_gravity="center"
             android:layout_marginTop="0dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="20dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
-                android:text="Welcome to"
-                android:textColor="#FFFFFF"
+                android:text="@string/welcome"
+                android:textColor="#EF8181"
                 android:textStyle="bold"
                 android:textSize="30dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="70dp"
-                android:text="CarShare"
-                android:layout_marginLeft="10dp"
-                android:textColor="#CB1AEA"
-                android:textStyle="bold"
-                android:textSize="34dp" />
 
         </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:text="Sign In"
             android:textColor="#ffffff"
             android:textStyle="bold"
@@ -65,7 +58,7 @@
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                android:hint="Enter your Email"
+                android:hint="Enter your Username"
                 android:paddingVertical="15dp"
                 android:textColor="#000000"
                 android:inputType="textEmailAddress"
@@ -145,15 +138,15 @@
             android:layout_marginTop="0dp"
             android:layout_marginBottom="40dp">
 
-            <TextView
-                android:id="@+id/ResetTv"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Reset Password"
-                android:textColor="#ffffff"
-                android:textSize="18dp" />
-
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/ResetTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Reset Password"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
     </LinearLayout>
 
 

@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -19,9 +20,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class DashboardActivity extends AppCompatActivity {
-    Button LogOutBTN, btnView;
+    Button  btnView;
     TextView TVname,TVemail,TVmob;
     DatabaseReference databaseReference;
+    private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,24 +35,25 @@ public class DashboardActivity extends AppCompatActivity {
         TVemail = findViewById(R.id.tvemail);
         TVmob = findViewById(R.id.tvmob);
         btnView = findViewById(R.id.viewprofile);
+        firebaseAuth = FirebaseAuth.getInstance();
 
 
-        LogOutBTN = findViewById(R.id.logout);
-        LogOutBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(DashboardActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-                Toast.makeText(DashboardActivity.this,"You're Logged out",Toast.LENGTH_SHORT).show();
-
-            }
-        });
+//        LogOutBTN = findViewById(R.id.logout);
+//        LogOutBTN.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(DashboardActivity.this, MainActivity.class);
+//                startActivity(intent);
+//                finish();
+//                Toast.makeText(DashboardActivity.this,"You're Logged out",Toast.LENGTH_SHORT).show();
+//
+//            }
+//        });
 
         
 
 
-        /* btnView.setOnClickListener(new View.OnClickListener() {
+         btnView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 databaseReference = FirebaseDatabase.getInstance().getReference().child("UserDATA").child("MTPbIBR0taxNGlK1VLX");
@@ -71,6 +74,12 @@ public class DashboardActivity extends AppCompatActivity {
                     }
                 });
             }
-        });*/
+        });
+    }
+
+
+
+    public void logout(View view) {
+        firebaseAuth.signOut();
     }
 }

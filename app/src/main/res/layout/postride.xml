@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#C19A9A"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -136,7 +137,7 @@
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:background="@drawable/rectangularfield"
+
                 android:paddingLeft="20dp"
                 android:layout_marginRight="15dp"
                 android:prompt="@string/app_name"
@@ -148,7 +149,7 @@
                 android:layout_height="40dp"
                 android:layout_weight="1"
                 android:layout_marginLeft="15dp"
-                android:background="@drawable/rectangularfield"
+
                 android:overScrollMode="ifContentScrolls"
                 android:paddingLeft="20dp"
                 android:prompt="@string/app_name"
@@ -174,29 +175,38 @@
             android:textAlignment="textEnd"
             android:textColor="#100B0B"
             android:textSize="14dp"
-            android:visibility="gone" />
+            android:visibility="invisible" />
     <ProgressBar
         android:id="@+id/progress_post"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="30dp"
-        android:visibility="gone"
+        android:visibility="invisible"
         android:layout_marginRight="20dp"
         />
+    <Button
+        android:id="@+id/beforeUpdate"
+        android:background="#4CAF50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/post_ride"
+        android:textAllCaps="true"
+        android:visibility="visible"
+        android:textSize="25sp" />
 
-
-
-
-
-        <Button
-            android:id="@+id/SubmitPassengerButton"
-            android:layout_width="150dp"
-            android:layout_height="69dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="88dp"
-            android:text="@string/post_ride"
-            android:textAllCaps="true"
-            android:textSize="25sp" />
+    <Button
+        android:id="@+id/SubmitPassengerButton"
+        android:background="#4CAF50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/post_ride"
+        android:textAllCaps="true"
+        android:visibility="gone"
+        android:textSize="25sp" />
 </LinearLayout>
     </LinearLayout>
 </ScrollView>
