@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#156BED"
-        android:hint="Mobile"
+        android:hint="@string/mobile"
         android:textStyle="bold"
         android:textSize="40dp"/>
 

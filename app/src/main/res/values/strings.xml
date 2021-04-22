@@ -40,6 +40,7 @@
     <string name="post_ride1">Post Ride</string>
     <string name="SignUp">SignUp</string>
     <string name="welcome">Welcome to Mutual Car Sharing</string>
+    <string name="mobile">Mobile</string>
 
 
     <string-array name="Gender">
