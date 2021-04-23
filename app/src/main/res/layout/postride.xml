@@ -176,14 +176,14 @@
             android:textColor="#100B0B"
             android:textSize="14dp"
             android:visibility="invisible" />
-    <ProgressBar
-        android:id="@+id/progress_post"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
-        android:visibility="invisible"
-        android:layout_marginRight="20dp"
-        />
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Match Your Driver"
+       android:id="@+id/matchButton"
+       android:onClick="Match"
+       android:layout_marginLeft="70dp"
+       android:background="#F10E0E"/>
     <Button
         android:id="@+id/beforeUpdate"
         android:background="#4CAF50"
@@ -193,7 +193,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/post_ride"
         android:textAllCaps="true"
-        android:visibility="visible"
+        android:visibility="gone"
         android:textSize="25sp" />
 
     <Button
@@ -205,7 +205,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/post_ride"
         android:textAllCaps="true"
-        android:visibility="gone"
+        android:visibility="visible"
         android:textSize="25sp" />
 </LinearLayout>
     </LinearLayout>

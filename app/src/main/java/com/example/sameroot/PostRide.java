@@ -8,7 +8,6 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.text.format.DateFormat;
 import android.view.Menu;
 import android.view.View;
@@ -17,7 +16,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -26,11 +24,9 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-import com.google.android.gms.common.api.Status;
 import com.google.android.libraries.places.api.Places;
 import com.google.android.libraries.places.api.model.Place;
 import com.google.android.libraries.places.widget.Autocomplete;
-import com.google.android.libraries.places.widget.AutocompleteActivity;
 import com.google.android.libraries.places.widget.model.AutocompleteActivityMode;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -273,6 +269,7 @@ public class PostRide extends Activity {
             @Override
             public void onClick(View view) {
                 insertPassengerData();
+
             }
         });
 
@@ -345,8 +342,8 @@ public class PostRide extends Activity {
         if (n4.isSelected()) {
             Seat_No = "4";
         }
-        Passengers passengers = new Passengers(Slocation, Elocation, Date, Time, Seat_No, Rider_type);
-        PassengerDbRef.push().setValue(passengers);
+        RideDetails rideDetails = new RideDetails(Slocation, Elocation, Date, Time, Seat_No, Rider_type);
+        PassengerDbRef.push().setValue(rideDetails);
         Toast.makeText(PostRide.this, "Data submitted!", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(PostRide.this, DashboardActivity.class);
         startActivity(intent);
@@ -357,6 +354,12 @@ public class PostRide extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
+    }
+    public void Match(View view) {
+        Intent intent = new Intent(this, PassengerFetchActivity.class);
+        startActivity(intent);
+        finish();
+
     }
 
 

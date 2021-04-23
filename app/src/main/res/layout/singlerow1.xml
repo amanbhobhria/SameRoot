@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        android:id="@+id/img1"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/driver_Name"
+        android:text="This is Driver Name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:tooltipText="Name "
+        android:textColor="#000"
+        android:layout_toRightOf="@id/img1"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/driver_Mobile_No"
+        android:text="Mobile Number"
+        android:textSize="20sp"
+        android:tooltipText="Mobile Number"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/img1"
+        android:layout_below="@id/driver_Name"
+        android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/driver_Adhaar_No"
+            android:text="Adhaar Number"
+            android:textSize="20sp"
+            android:tooltipText="Driver Aadhar Number"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/img1"
+            android:layout_below="@id/driver_Mobile_No"
+            android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_No"
+        android:text="This is Car Number"
+        android:textSize="20sp"
+        android:tooltipText="Car Number"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/img1"
+        android:layout_below="@id/driver_Adhaar_No"
+        android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/car_Model"
+            android:text="This is Car Model "
+            android:textSize="20sp"
+            android:tooltipText="Car Model"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/img1"
+            android:layout_below="@id/car_No"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/car_Company"
+            android:text=" Car Company "
+            android:tooltipText="Car Company"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/img1"
+            android:layout_below="@id/car_Model"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

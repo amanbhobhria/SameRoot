@@ -1,12 +1,12 @@
 package com.example.sameroot;
 
-public class Passengers {
+public class RideDetails {
     public String Start_Location, End_Location, Date, Time, Seat_No, Rider_type;
-    public Passengers(){
+    public RideDetails(){
 
     }
 
-    public Passengers( String Start_Location, String End_Location, String Date, String Time, String Seat_No, String Rider_type) {
+    public RideDetails(String Start_Location, String End_Location, String Date, String Time, String Seat_No, String Rider_type) {
         this.Start_Location = Start_Location;
         this.End_Location = End_Location;
         this.Date = Date;

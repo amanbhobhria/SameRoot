@@ -51,7 +51,15 @@ public class DriverActiviry extends Activity {
         String ddadhar = d_adhar.getText().toString();
         String ddcity = d_city.getText().toString();
         String ddmobile = d_mobile.getText().toString();
-        Driver ddriver = new Driver(ddname, ddcarno, ddcarmodel, ddadhar, ddcity, ddmobile, ddmobile);
+        Driver ddriver = new Driver();
+
+        ddriver.setDriver_Name(ddname);
+        ddriver.setCar_No(ddcarno);
+        ddriver.setCar_Model(ddcarmodel);
+        ddriver.setDriver_Adhaar_No(ddadhar);
+        ddriver.setDriver_City(ddcity);
+        ddriver.setDriver_Mobile_No(ddmobile);
+
         DriverDbRef.push().setValue(ddriver);
         Toast.makeText(DriverActiviry.this, "Data submitted!", Toast.LENGTH_SHORT).show();
 

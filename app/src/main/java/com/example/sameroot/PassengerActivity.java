@@ -24,14 +24,11 @@ public class PassengerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_passenger);
         c_name = findViewById(R.id.D_name);
-
-
-
         c_adhar = findViewById(R.id.C_adhaar);
         c_city = findViewById(R.id.p_City);
         c_mobile = findViewById(R.id.Driver_mobile);
         SubmitPassengerButton = findViewById(R.id.SubmitPassengerButton);
-        PassengersDbRef = FirebaseDatabase.getInstance().getReference().child("Passengers");
+        PassengersDbRef = FirebaseDatabase.getInstance().getReference().child("RideDetails");
         SubmitPassengerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,10 +39,7 @@ public class PassengerActivity extends AppCompatActivity {
     }
         private void insertPassengerData(){
             String ddname = c_name.getText().toString();
-
-
-
-            String ddadhar = c_adhar.getText().toString();
+            String c_adadhar = c_adhar.getText().toString();
             String ddcity = c_city.getText().toString();
             String ddmobile = c_mobile.getText().toString();
            // Passenger ppassenger = new Passenger(ppname, ddadhar, ddcity, ddmobile, ddmobile);

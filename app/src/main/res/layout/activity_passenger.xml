@@ -71,7 +71,6 @@
         android:layout_height="50dp"
         android:background="@drawable/rectangularfield"
         android:hint="@string/enter_your_city_name"
-        android:inputType="phone"
         android:paddingVertical="15dp"
         android:paddingLeft="60dp"
          />
