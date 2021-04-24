@@ -10,6 +10,7 @@ import android.os.Bundle;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class PassengerFetchActivity extends AppCompatActivity {
     RecyclerView recview;
@@ -28,6 +29,8 @@ public class PassengerFetchActivity extends AppCompatActivity {
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("Drivers"), model1.class)
                         .build();
         adapter =new myadapter1(options);
+
+
         recview.setAdapter(adapter);
     }
     @Override

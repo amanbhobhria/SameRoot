@@ -32,27 +32,30 @@ public class PassengerActivity extends AppCompatActivity {
         SubmitPassengerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //  insertPassengerData();
+                insertPassengerData();
             }
         });
 
     }
-        private void insertPassengerData(){
+        private void insertPassengerData() {
             String ddname = c_name.getText().toString();
             String c_adadhar = c_adhar.getText().toString();
             String ddcity = c_city.getText().toString();
             String ddmobile = c_mobile.getText().toString();
-           // Passenger ppassenger = new Passenger(ppname, ddadhar, ddcity, ddmobile, ddmobile);
-          //  DriverDbRef.push().setValue(ddriver);
-          //  Toast.makeText(DriverActiviry.this, "Data submitted!", Toast.LENGTH_SHORT).show();
+            // Passenger ppassenger = new Passenger(ppname, ddadhar, ddcity, ddmobile, ddmobile);
+            //  DriverDbRef.push().setValue(ddriver);
+            //  Toast.makeText(DriverActiviry.this, "Data submitted!", Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent();
-            intent.putExtra("isDataUpdate",true);
-            setResult(2,intent);
+            intent.putExtra("isDataUpdate", true);
+            setResult(2, intent);
             finish();//finishing activity
 
-       /* Intent intent=new Intent(DriverActiviry.this, MainActivity.class);
-        startActivity(intent);*/
         }
+    public void Match(View view) {
+        Intent intent = new Intent(this, PassengerFetchActivity.class);
+        startActivity(intent);
+        finish();
 
+    }
 }

@@ -42,9 +42,10 @@ public class PostRide extends Activity {
     TextView textView1, textView2, textView3, textView4, dateTE, TimeTE;
     Button Passengerbutton;
     Button Driverbutton;
-   // ProgressBar postProgress;
+
 
     TextView updateProfileTxt;
+
     private Spinner spDriver, spPassenger;
     private Spinner n1, n2, n3, n4;
     String Seat_No = "";
@@ -68,7 +69,6 @@ public class PostRide extends Activity {
         textView3 = findViewById(R.id.text_view3);
         textView4 = findViewById(R.id.text_view4);
         updateProfileTxt = findViewById(R.id.updateProfileTxt);
-
 
         //Initiate places
         Places.initialize(getApplicationContext(), "AIzaSyD8Q0NsAedZvLJ2Li1gouQ82i22t-0mod4");
@@ -355,12 +355,8 @@ public class PostRide extends Activity {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
-    public void Match(View view) {
-        Intent intent = new Intent(this, PassengerFetchActivity.class);
-        startActivity(intent);
-        finish();
 
-    }
+
 
 
 }

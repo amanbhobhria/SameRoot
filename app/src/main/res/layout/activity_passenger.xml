@@ -81,7 +81,16 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="10dp"
         android:layout_height="60dp"
+        android:visibility="invisible"
         android:text="@string/submit"
         />
+        <Button
+            android:id="@+id/matchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="#F10E0E"
+            android:onClick="Match"
+            android:text="Match Your Driver" />
     </LinearLayout>
 </ScrollView>

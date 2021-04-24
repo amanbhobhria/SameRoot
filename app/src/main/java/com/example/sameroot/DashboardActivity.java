@@ -20,8 +20,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class DashboardActivity extends AppCompatActivity {
-    Button  btnView;
-    TextView TVname,TVemail,TVmob;
+    Button btnView;
+    TextView TVname, TVemail, TVmob;
     DatabaseReference databaseReference;
     private FirebaseAuth firebaseAuth;
 
@@ -38,22 +38,7 @@ public class DashboardActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
 
 
-//        LogOutBTN = findViewById(R.id.logout);
-//        LogOutBTN.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(DashboardActivity.this, MainActivity.class);
-//                startActivity(intent);
-//                finish();
-//                Toast.makeText(DashboardActivity.this,"You're Logged out",Toast.LENGTH_SHORT).show();
-//
-//            }
-//        });
-
-        
-
-
-         btnView.setOnClickListener(new View.OnClickListener() {
+        btnView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 databaseReference = FirebaseDatabase.getInstance().getReference().child("UserDATA").child("MTPbIBR0taxNGlK1VLX");
@@ -76,7 +61,6 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
     }
-
 
 
     public void logout(View view) {
